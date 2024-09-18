@@ -1,0 +1,11 @@
+module.exports = {
+    content: [
+      './**/*.php', // Adjust this according to your project's file paths
+      './assets/js/**/*.js',
+    ],
+    theme: {
+      extend: {},
+    },
+    plugins: [],
+  }
+  
