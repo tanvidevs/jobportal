@@ -26,11 +26,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             
             // Redirect based on role
             if ($user['role'] == 'admin') {
-                header('Location: admin/dashboard.php');
+                header('Location: .../../admin/dashboard.php');
             } elseif ($user['role'] == 'hr') {
-                header('Location: hr/dashboard.php');
+                header('Location: .../../hr/dashboard.php');
             } else {
-                header('Location: candidate/dashboard.php');
+                header('Location: .../../candidate/dasshboard.php');
             }
             exit();
         } else {
