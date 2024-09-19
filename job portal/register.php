@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (mysqli_query($conn, $insert_query)) {
             $_SESSION['role'] = $role;
             $_SESSION['user_id'] = mysqli_insert_id($conn);
-            header('Location: login.php');
+            header('Location: .../../login.php');
             exit();
         } else {
             $error = "Error registering user: " . mysqli_error($conn);
